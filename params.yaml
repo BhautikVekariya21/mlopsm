@@ -1,0 +1,34 @@
+# params.yaml
+data_ingestion:
+  test_size: 0.2
+  random_state: 42
+
+data_preprocessing:
+  min_words_per_tweet: 3
+  remove_stopwords: true
+  apply_lemmatization: true
+  lowercase: true
+  remove_numbers: true
+  remove_punctuations: true
+  remove_urls: true
+
+feature_engineering:
+  vectorizer: "count"
+  max_features: 50
+  ngram_range:
+    - 1
+    - 1
+
+model_building:
+  model_type: "gradient_boosting"
+  n_estimators: 100
+  learning_rate: 0.1
+  max_depth: 6
+  random_state: 47
+
+model_evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - auc

@@ -1,0 +1,10 @@
+[core]
+    remote = awsdvc
+['remote "trash"']
+    url = C:\Users\bhaut\AppData\Local\Temp
+['remote "mlopslocal"']
+    url = C:\Users\bhaut\AppData\Local\Temp\mlopslocal
+['remote "local"']
+    url = C:\Users\bhaut\AppData\Local\Temp\mlopslocal
+['remote "awsdvc"']
+    url = s3://amznmlopss3
